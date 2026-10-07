@@ -1,0 +1,1244 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  color: #311f09;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.brand_accent_text,
+.highlight_brand {
+  color: #ff8a00;
+}
+
+.primary_site_header {
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: auto;
+  min-height: 8vw;
+  padding: 1.5vw 0;
+  width: 100%;
+}
+
+.main_navbar_bar {
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: auto;
+  max-width: 79.17vw;
+  width: 94%;
+}
+
+.brand_emblem_wrap {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  height: auto;
+  width: 12.03vw;
+}
+
+.brand_emblem_wrap img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.navigation_link_group {
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: auto;
+  width: 42vw;
+  gap: 1vw;
+}
+
+.nav_menu_item {
+  font-weight: 500;
+  color: #000000;
+  font-size: 1.04vw;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.nav_menu_item:hover,
+.nav_menu_item.active {
+  color: #ff8a00;
+}
+
+.header_control_cluster {
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  height: auto;
+  width: auto;
+  gap: 2vw;
+}
+
+.cart_indicator_shell {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart_indicator_shell img {
+  width: 2.2vw;
+  height: auto;
+  object-fit: contain;
+}
+
+.header_entry_button {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #3fa72f;
+  border-radius: 2vw;
+  font-weight: 600;
+  font-size: 0.85vw;
+  height: 2.8vw;
+  width: 6.5vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.header_entry_button:hover {
+  opacity: 0.9;
+}
+
+.hero_showcase_zone {
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: auto;
+  padding: 3vw 0 4vw;
+  width: 100%;
+}
+
+.hero_content_stage {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: auto;
+  max-width: 68vw;
+  width: 92%;
+  gap: 3vw;
+}
+
+.hero_copy_column {
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  width: 30vw;
+  gap: 1.8vw;
+}
+
+.cuisine_badge_pill {
+  background-color: #ffe8cc;
+  border-radius: 2vw;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  height: auto;
+  padding: 0.5vw 1.4vw;
+  width: fit-content;
+}
+
+.badge_text_tag {
+  font-weight: 600;
+  color: #ff8a00;
+  font-size: 0.94vw;
+  white-space: nowrap;
+}
+
+.hero_headline_title {
+  line-height: 1.1;
+  font-weight: 700;
+  font-size: 4.43vw;
+  color: #311f09;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.hero_subheadline_desc {
+  line-height: 1.6;
+  color: #5c4529;
+  font-size: 1.04vw;
+}
+
+.hero_cta_button_row {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  height: auto;
+  width: 100%;
+  gap: 1.2vw;
+}
+
+.btn_solid_orange,
+.btn_solid_green {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.04vw;
+  color: #ffffff;
+  border-radius: 2vw;
+  height: 3.85vw;
+  width: 12vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.btn_solid_orange {
+  background-color: #ff8a00;
+}
+
+.btn_solid_green {
+  background-color: #3fa72f;
+}
+
+.btn_solid_orange:hover,
+.btn_solid_green:hover {
+  opacity: 0.9;
+}
+
+.hero_visual_column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 35vw;
+}
+
+.hero_visual_column img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.intro_welcome_zone {
+  background-color: #ecfaf1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: auto;
+  padding: 5vw 0;
+  width: 100%;
+}
+
+.intro_content_container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: auto;
+  max-width: 62vw;
+  width: 92%;
+  gap: 4vw;
+}
+
+.intro_image_wrapper {
+  height: auto;
+  width: 32vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro_image_wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.intro_description_wrapper {
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  width: 26vw;
+  gap: 1.8vw;
+}
+
+.intro_section_heading {
+  line-height: 1.1;
+  font-weight: 700;
+  font-size: 4.17vw;
+  color: #311f09;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.intro_section_text {
+  line-height: 1.5;
+  color: #5c4529;
+  font-size: 1.3vw;
+}
+
+.btn_explore_menu {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.04vw;
+  color: #ffffff;
+  border-radius: 2vw;
+  background-color: #ff8a00;
+  height: 3.85vw;
+  width: 12vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.btn_explore_menu:hover {
+  opacity: 0.9;
+}
+
+.menu_showcase_zone {
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: auto;
+  padding: 5vw 0 6vw;
+  width: 100%;
+}
+
+.menu_showcase_stage {
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  max-width: 65vw;
+  width: 92%;
+  gap: 2.8vw;
+}
+
+.menu_showcase_headline {
+  font-weight: 700;
+  font-size: 4.17vw;
+  color: #311f09;
+  font-family: 'Playfair Display', Georgia, serif;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.menu_category_toolbar {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: auto;
+  max-width: 65vw;
+  width: 100%;
+  gap: 1vw;
+}
+
+.category_select_pill {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.04vw;
+  color: #311f09;
+  border-radius: 2vw;
+  background-color: #f3f4f6;
+  height: 3.85vw;
+  width: 18%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.category_select_pill:hover {
+  background-color: #311f09;
+  color: #ffffff;
+}
+
+.category_select_pill.active_category_pill {
+  background-color: #311f09 !important;
+  color: #ffffff !important;
+}
+
+.dishes_display_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5vw 1.8vw;
+  height: auto;
+  max-width: 65vw;
+  width: 100%;
+}
+
+.dish_card_unit {
+  box-shadow: 0 0.52vw 1.56vw rgba(0, 0, 0, 0.04);
+  border-radius: 3.12vw;
+  background-color: #fbfafa;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  min-height: 33vw;
+  width: 100%;
+  padding: 1.8vw 1.2vw;
+  gap: 0.8vw;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dish_card_unit:hover {
+  transform: translateY(-0.26vw);
+  box-shadow: 0 0.83vw 1.88vw rgba(0, 0, 0, 0.08);
+}
+
+.dish_card_unit > img:first-child {
+  height: 12.5vw;
+  width: 12.5vw;
+  object-fit: contain;
+}
+
+.dish_title_caption {
+  font-weight: 700;
+  color: #311f09;
+  font-size: 1.56vw;
+  text-align: center;
+}
+
+.dish_card_unit > img:nth-of-type(2) {
+  height: 1vw;
+  width: auto;
+  object-fit: contain;
+}
+
+.dish_summary_text {
+  line-height: 1.5;
+  text-align: center;
+  font-size: 0.88vw;
+  color: #59442b;
+  max-width: 90%;
+}
+
+.dish_footer_meta {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: auto;
+  width: 88%;
+  margin-top: 0.5vw;
+}
+
+.dish_price_tag {
+  font-weight: 700;
+  color: #311f09;
+  font-size: 1.3vw;
+}
+
+.btn_order_dish {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.04vw;
+  color: #ffffff;
+  background-color: #ff8a00;
+  border-radius: 2vw;
+  height: 2.86vw;
+  width: 8.5vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.btn_order_dish:hover {
+  opacity: 0.9;
+}
+
+.pagination_nav_deck {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: auto;
+  width: 100%;
+  gap: 0.8vw;
+  margin-top: 1vw;
+}
+
+.pagination_page_number {
+  cursor: pointer;
+  font-weight: 600;
+  color: #ff8a00;
+  font-size: 1.04vw;
+  background-color: #fff4e6;
+  border-radius: 0.78vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 2.86vw;
+  width: 2.86vw;
+  transition: background-color 0.2s ease;
+}
+
+.pagination_page_number:hover {
+  background-color: #ffe2c2;
+}
+
+.pagination_ellipsis_box {
+  color: #888888;
+  font-size: 1.35vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 2.86vw;
+  width: 2.86vw;
+}
+
+.pagination_nav_arrow {
+  cursor: pointer;
+  background-color: #311f09;
+  border-radius: 0.78vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 2.86vw;
+  width: 2.86vw;
+  transition: opacity 0.2s ease;
+}
+
+.pagination_nav_arrow p {
+  font-size: 1.04vw;
+  color: #ffffff;
+}
+
+.pagination_nav_arrow:hover {
+  opacity: 0.85;
+}
+
+.reservation_feature_zone {
+  background-color: #fffaf5;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: auto;
+  padding: 5vw 0;
+  width: 100%;
+}
+
+.reservation_content_shell {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: auto;
+  max-width: 71.77vw;
+  width: 92%;
+  gap: 4vw;
+}
+
+.reservation_content_shell > img {
+  width: 36vw;
+  height: auto;
+  object-fit: contain;
+}
+
+.reservation_message_panel {
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  display: flex;
+  height: auto;
+  width: 26vw;
+  gap: 1.8vw;
+}
+
+.reservation_invite_title {
+  line-height: 1.15;
+  color: #311f09;
+  font-size: 4.17vw;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+}
+
+.reservation_invite_desc {
+  line-height: 1.6;
+  color: #5c4529;
+  font-size: 1.04vw;
+}
+
+.btn_booking_action {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.04vw;
+  color: #ffffff;
+  background-color: #ff8a00;
+  border-radius: 2vw;
+  height: 3.85vw;
+  width: 12vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.btn_booking_action:hover {
+  opacity: 0.9;
+}
+
+.culinary_experts_zone {
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: auto;
+  padding: 5vw 0 6vw;
+  width: 100%;
+}
+
+.culinary_content_stage {
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  max-width: 58vw;
+  width: 92%;
+  gap: 3vw;
+}
+
+.culinary_experts_heading {
+  color: #311f09;
+  font-size: 4.17vw;
+  font-weight: 700;
+  font-family: 'Playfair Display', Georgia, serif;
+  text-align: center;
+}
+
+.chef_cards_carousel {
+  text-align: center;
+  align-items: flex-start;
+  justify-content: space-between;
+  display: flex;
+  height: auto;
+  max-width: 58vw;
+  width: 100%;
+  gap: 2vw;
+}
+
+.chef_profile_tile {
+  text-align: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  width: 18vw;
+  gap: 0.8vw;
+}
+
+.chef_profile_tile img {
+  border-radius: 2.08vw;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.chef_full_name {
+  color: #311f09;
+  font-weight: 700;
+  font-size: 1.3vw;
+  margin-top: 0.4vw;
+}
+
+.chef_rank_title {
+  color: #a08d76;
+  font-size: 1.3vw;
+}
+
+.btn_view_team {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.04vw;
+  color: #ffffff;
+  background-color: #ff8a00;
+  border-radius: 2vw;
+  height: 3.85vw;
+  width: 12.24vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.btn_view_team:hover {
+  opacity: 0.9;
+}
+
+.testimonials_display_zone {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('./assets/testimonials_pattern_bg.png');
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: auto;
+  padding: 5vw 0 6vw;
+  width: 100%;
+}
+
+.testimonials_inner_stage {
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  max-width: 58vw;
+  width: 92%;
+  gap: 2.5vw;
+}
+
+.testimonials_section_title {
+  color: #311f09;
+  font-size: 4.17vw;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.customerSwiper,
+.swiper {
+  margin: 0 auto;
+  height: auto;
+  max-width: 58vw;
+  width: 100%;
+}
+
+.swiper_slide {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.testimonial_client_card {
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  max-width: 58vw;
+  width: 100%;
+  gap: 0.8vw;
+  padding: 1vw 0;
+}
+
+.testimonial_client_card > img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 7.3vw;
+  height: 7.3vw;
+}
+
+.client_display_name {
+  color: #311f09;
+  font-size: 1.56vw;
+  font-weight: 700;
+}
+
+.client_profession_tag {
+  color: #5c4529;
+  font-size: 1.04vw;
+}
+
+.quote_mark_top,
+.quote_mark_bottom {
+  font-size: 2.6vw;
+  display: flex;
+  max-width: 32vw;
+  width: 100%;
+}
+
+.quote_mark_top {
+  height: auto;
+  justify-content: flex-start;
+}
+
+.quote_mark_bottom {
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: auto;
+}
+
+.quote_mark_top p,
+.quote_mark_bottom p {
+  color: #311f09;
+  font-size: 2.6vw;
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1;
+}
+
+.client_quote_text {
+  text-align: center;
+  line-height: 1.6;
+  color: #5c4529;
+  font-size: 1.04vw;
+  max-width: 32vw;
+}
+
+.client_avatars_row {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: auto;
+  max-width: 55.4vw;
+  width: 100%;
+  margin-top: 1.5vw;
+}
+
+.client_avatars_row img {
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.client_avatars_row img:nth-child(1),
+.client_avatars_row img:nth-child(7) {
+  width: 3.5vw;
+  height: 3.5vw;
+}
+
+.client_avatars_row img:nth-child(2),
+.client_avatars_row img:nth-child(6) {
+  width: 5.5vw;
+  height: 5.5vw;
+}
+
+.client_avatars_row img:nth-child(3),
+.client_avatars_row img:nth-child(5) {
+  width: 6.5vw;
+  height: 6.5vw;
+}
+
+.client_avatars_row img:nth-child(4) {
+  width: 12.1vw;
+  height: 12.1vw;
+}
+
+.client_avatars_row img:hover {
+  transform: scale(1.08);
+}
+
+.operating_hours_zone {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: auto;
+  padding: 4vw 0;
+  width: 100%;
+}
+
+.hours_banner_backdrop {
+  background-position: center;
+  background-size: cover;
+  background-image: url('./assets/opening_hours_bg.png');
+  border-radius: 2.08vw;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: auto;
+  min-height: 34vw;
+  padding: 3.5vw 2vw;
+  max-width: 60vw;
+  width: 92%;
+}
+
+.hours_centered_card {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  width: 100%;
+  max-width: 32vw;
+  gap: 1.4vw;
+}
+
+.hours_headline_title {
+  color: #ffffff;
+  font-size: 3.8vw;
+  font-weight: 700;
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1.1;
+}
+
+.hours_schedule_info {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  width: 100%;
+  gap: 0.4vw;
+}
+
+.hours_subheading {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2vw;
+  margin-bottom: 0.3vw;
+}
+
+.hours_timing_item {
+  color: #ffffff;
+  font-size: 1vw;
+  line-height: 1.4;
+}
+
+.hours_action_bar {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: auto;
+  width: 100%;
+  gap: 1.2vw;
+  margin-top: 0.6vw;
+}
+
+.btn_schedule_order,
+.btn_schedule_reserve {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1vw;
+  border-radius: 2vw;
+  height: 3.6vw;
+  width: 11.5vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.btn_schedule_order {
+  color: #ffffff;
+  background-color: #ff8a00;
+}
+
+.btn_schedule_reserve {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.btn_schedule_order:hover,
+.btn_schedule_reserve:hover {
+  opacity: 0.9;
+}
+
+.our_story_zone {
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: auto;
+  padding: 5vw 0;
+  width: 100%;
+}
+
+.story_content_canvas {
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  max-width: 71vw;
+  width: 92%;
+  gap: 5vw;
+}
+
+.story_block_duo {
+  align-items: center;
+  display: flex;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+  gap: 4vw;
+}
+
+.story_block_first {
+  justify-content: space-between;
+}
+
+.story_block_second {
+  justify-content: space-between;
+}
+
+.story_round_image {
+  object-fit: contain;
+  width: 32vw;
+  height: auto;
+}
+
+.story_block_first .story_text_pane {
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  width: 28vw;
+  gap: 1.5vw;
+}
+
+.story_block_second .story_text_pane {
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  width: 28vw;
+  gap: 1.5vw;
+}
+
+.story_heading_text {
+  color: #311f09;
+  font-size: 4.17vw;
+  font-weight: 700;
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1.1;
+}
+
+.story_description_text {
+  line-height: 1.6;
+  color: #5c4529;
+  font-size: 1.3vw;
+}
+
+.executive_spotlight_zone {
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: auto;
+  padding: 5vw 0 6vw;
+  width: 100%;
+}
+
+.spotlight_profile_layout {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: auto;
+  max-width: 58vw;
+  width: 92%;
+  gap: 4vw;
+}
+
+.spotlight_portrait_frame {
+  border-radius: 1vw;
+  object-fit: cover;
+  width: 25vw;
+  height: auto;
+}
+
+.spotlight_details_pane {
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  width: 28vw;
+  gap: 1.5vw;
+}
+
+.spotlight_role_title {
+  line-height: 1.1;
+  color: #311f09;
+  font-size: 4.17vw;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+}
+
+.spotlight_name_caption {
+  font-weight: 700;
+  color: #000000;
+  font-size: 2.08vw;
+}
+
+.spotlight_quote_box {
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  width: 100%;
+  gap: 0.8vw;
+}
+
+.quote_sign_leading,
+.quote_sign_trailing {
+  color: #ffe8cc;
+  font-size: 3.12vw;
+  font-family: 'Playfair Display', Georgia, serif;
+  height: auto;
+  display: flex;
+}
+
+.quote_sign_leading {
+  justify-content: flex-start;
+}
+
+.quote_sign_trailing {
+  justify-content: flex-end;
+}
+
+.quote_sign_leading p,
+.quote_sign_trailing p {
+  color: #ffe8cc;
+  font-size: 3.12vw;
+  line-height: 1;
+}
+
+.quote_italic_body {
+  line-height: 1.5;
+  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #5c4529;
+  font-size: 1.56vw;
+}
+
+.site_master_footer {
+  color: #ffffff;
+  background-color: #311f09;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  padding: 4vw 0 2.5vw;
+  width: 100%;
+  gap: 3vw;
+}
+
+.footer_columns_deck {
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+  height: auto;
+  max-width: 58vw;
+  width: 92%;
+  gap: 2vw;
+}
+
+.footer_presentation_card {
+  color: #ffffff;
+  font-size: 1.04vw;
+  justify-content: flex-start;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  width: 18vw;
+  gap: 1.5vw;
+}
+
+.footer_symbol_mark {
+  object-fit: contain;
+  height: auto;
+  width: 6.88vw;
+}
+
+.footer_motto_phrase {
+  line-height: 1.6;
+  font-size: 1.04vw;
+  color: #ffffff;
+}
+
+.footer_social_channels {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  height: auto;
+  width: 100%;
+  gap: 1vw;
+}
+
+.footer_social_channels img {
+  width: 2.8vw;
+  height: 2.8vw;
+  object-fit: contain;
+}
+
+.footer_social_channels a {
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transition: transform 0.2s ease;
+}
+
+.footer_social_channels a:hover {
+  transform: translateY(-0.16vw);
+}
+
+.footer_directory_column {
+  flex-direction: column;
+  justify-content: flex-start;
+  display: flex;
+  height: auto;
+  width: auto;
+  gap: 0.8vw;
+}
+
+.footer_contact_pane {
+  max-width: 15vw;
+}
+
+.footer_section_caption {
+  font-weight: 700;
+  font-size: 1.3vw;
+  color: #ff8a00;
+  margin-bottom: 0.4vw;
+}
+
+.footer_nav_entry {
+  line-height: 1.5;
+  font-size: 1.04vw;
+  color: #e3e2e0;
+}
+
+.footer_copyright_ribbon {
+  text-align: center;
+  font-size: 1.04vw;
+  color: #ffffff;
+  width: 100%;
+  padding-top: 1.5vw;
+  border-top: 0.05vw solid rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,10 @@
+{
+  "name": "react-site-italy",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix vite-project run dev",
+    "build": "npm --prefix vite-project run build",
+    "preview": "npm --prefix vite-project run preview",
+    "lint": "npm --prefix vite-project run lint"
+  }
+}
